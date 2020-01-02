@@ -18,13 +18,13 @@ const App = () => (
     <div>
       <Navigation />
       <hr />
-      <Route exact path={ROUTES.LANDING} />
-      <Route path={ROUTES.SIGN_UP} />
-      <Route path={ROUTES.SIGN_IN} />
-      <Route path={ROUTES.PASSWORD_FORGET} />
-      <Route path={ROUTES.HOME} />
-      <Route path={ROUTES.ACCOUNT} />
-      <Route path={ROUTES.ADMIN} />
+      <Route exact path={ROUTES.LANDING} component={LandingPage} />
+      <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
+      <Route path={ROUTES.SIGN_IN} component={SignInPage} />
+      <Route path={ROUTES.PASSWORD_FORGET} component={PasswordForgetPage} />
+      <Route path={ROUTES.HOME} component={HomePage} />
+      <Route path={ROUTES.ACCOUNT} component={AccountPage} />
+      <Route path={ROUTES.ADMIN} component={AdminPage} />
     </div>
   </Router>
 );
